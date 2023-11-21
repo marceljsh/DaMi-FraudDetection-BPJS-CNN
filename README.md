@@ -11,7 +11,7 @@ Predicting the potential for fraud in hospital service claims using CNN (Convolu
 
 An <a href="https://insightsimaging.springeropen.com/articles/10.1007/s13244-018-0639-9/figures/1"> <button>overview</button></a> of a convolutional neural network (CNN) architecture and the training process.
 
-### `🗂️ Used dataset`
+### `🗂️ Dataset`
 <a href="https://bpjs-kesehatan.go.id/"> <button>BPJS</button></a> (Badan Penyelenggara Jaminan Sosial) Dataset
 Hackathon to train the model, which can be accessed <a
     href="https://github.com/marceljsh/DaMi-FraudDetection-BPJS-CNN/blob/main/dataset.csv"> <button>here</button></a>.
