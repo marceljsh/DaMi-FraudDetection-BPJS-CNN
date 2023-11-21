@@ -1,12 +1,16 @@
 # Fraud Detection (_Binary Classification_) of BPJS Hackathon Dataset Using CNN
 
-Developing a data mining model to predict the potential for fraud in hospital service claims based on a train dataset consisting of 200217 observations and 53 variables.
+Predicting the potential for fraud in hospital service claims using CNN (_Convolutional Neural Networks_)
 
- 
+## 🔖 What is CNN (Convolutional Neural Networks)?
+CNN is..
+
+## 🗂️ Used dataset
+<a href="https://bpjs-kesehatan.go.id/"> <button>BPJS</button></a> (Badan Penyelenggara Jaminan Sosial) Dataset Hackathon to train the model, which can be accessed <a href="https://github.com/marceljsh/DaMi-FraudDetection-BPJS-CNN/blob/main/dataset.csv"> <button>here</button></a>.
+
  <br> 
  
-🗓️ See the timeline <a href="https://docs.google.com/spreadsheets/d/1lCm1ovuSqeUQS-WfJKTlWbghmVE-5M6GxSSM4PMYfkw/edit?usp=sharing"> <button>here</button></a>.
-📂 See the dataset <a href="https://docs.google.com/spreadsheets/d/1lCm1ovuSqeUQS-WfJKTlWbghmVE-5M6GxSSM4PMYfkw/edit?usp=sharing"> <button>here</button></a>.
+🗓️ See the timeline <a href="https://docs.google.com/spreadsheets/d/1lCm1ovuSqeUQS-WfJKTlWbghmVE-5M6GxSSM4PMYfkw/edit?usp=sharing"> <button>here</button></a>.<br>
 
 <br>
  
