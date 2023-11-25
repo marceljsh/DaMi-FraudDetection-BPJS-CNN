@@ -44,9 +44,9 @@ Hackathon to train the model, which can be accessed <a
 ```
 🧞‍♂️ SemelekeTeam
 
-1. 12S20003 - Marcel Joshua
-2. 12S20025 - Irma Naomi
-2. 12S20031 - Daniel Andres
-3. 12S20048 - Jevania
+1. 12S20003 - [Marcel Joshua](https://github.com/marceljsh)
+2. 12S20025 - [Irma Naomi](https://github.com/irmatampubolon)
+2. 12S20031 - [Daniel Andres](https://github.com/danismg)
+3. 12S20048 - [Jevania](https://github.com/Jevania)
 
 ```
