@@ -8,7 +8,6 @@ Predicting the potential for fraud in hospital service claims using CNN (Convolu
 
 <a href="cnn architecture"><img src="https://github.com/marceljsh/DaMi-FraudDetection-BPJS-CNN/assets/70991553/a2d827e1-ebe4-487c-bb35-376683bfa61f" align="center" height="400" width="750" ></a>
 
-
 An <a href="https://insightsimaging.springeropen.com/articles/10.1007/s13244-018-0639-9/figures/1"> <button>overview</button></a> of a convolutional neural network (CNN) architecture and the training process.
 
 ### `🗂️ Dataset`
@@ -21,6 +20,10 @@ Hackathon to train the model, which can be accessed <a
 ### `📚 Business Understanding`
 
 ### `📑 Data Understanding`
+- Describe data: The dataset consists of 53 variables with a total of 200217 observations.
+
+  <img width="419" alt="image" src="https://github.com/marceljsh/DaMi-FraudDetection-BPJS-CNN/assets/70984049/0f42f02f-56cf-4c80-bbbd-c6e70df1ed27">
+
 
 ### `🫧 Data Preparation`
 🚧
