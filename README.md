@@ -25,7 +25,12 @@ Hackathon to train the model, which can be accessed <a
 ### `📑 Data Understanding`
 - **Describe data**: The dataset consists of 53 variables with a total of 200217 observations. The dataset description can be seen in the table below.
 
-  <img width="419" alt="image" src="https://github.com/marceljsh/DaMi-FraudDetection-BPJS-CNN/assets/70984049/0f42f02f-56cf-4c80-bbbd-c6e70df1ed27">
+  <img width="419" alt="dataset description" src="https://github.com/marceljsh/DaMi-FraudDetection-BPJS-CNN/assets/70984049/0f42f02f-56cf-4c80-bbbd-c6e70df1ed27">
+
+The visualization below shows the correlation between features.
+
+<img width="667" alt="heatmap" src="https://github.com/marceljsh/DaMi-FraudDetection-BPJS-CNN/assets/70984049/5e7b5f86-eb6e-489e-9ebf-ca85b31c8e93">
+
 
 - **Data Validation**: Evaluation phase, the goal is to ensure completeness and quality. Any missing values or noise in the data may be due to input errors, and it's important to fix these for accurate results.
 
