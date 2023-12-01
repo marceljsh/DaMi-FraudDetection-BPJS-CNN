@@ -22,6 +22,10 @@ Hackathon to train the model, which can be accessed <a
 
 ### `📚 Business Understanding`
 
+Badan Penyelenggara Jaminan Sosial (BPJS) is among national bureaus with the largest funding allocation. As [reported](https://jdih.kemenkeu.go.id/download/60bdd784-3b61-4b88-b4b0-374c400c1d19/236~PMK.02~2022.pdf) by the [Ministry of Finance](https://www.kemenkeu.go.id), the funds allocated for BPJS will reach IDR 4.46 trillion as of 2023. This huge amount of funds will be used for the [Jaminan Kesehatan Nasional (JKN)](https://siha.kemkes.go.id/portal/files_upload/BUKU_PANDUAN_JKN_BAGI_POPULASI_KUNCI_2016.pdf) program. However, these funds are terribly vulnerable to fraud. Fraud in BPJS can cause losses to the government and community. The government could lose large amounts of funds, while the community's right could be violated. Therefore, it is necessary to implement fraud detection.
+
+In order to detect fraud in BPJS, data analysis will be conducted. Data analysis can be used to find abnormal or suspicious patterns. These patterns can be signs of fraud. Report data will be analyzed using data analysis techniques, such as data mining and machine learning.
+
 ### `📑 Data Understanding`
 - **Describe data**: The dataset consists of 53 variables with a total of 200217 observations. The dataset description can be seen in the table below.
 
