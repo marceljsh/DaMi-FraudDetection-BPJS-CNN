@@ -7,7 +7,7 @@ Predicting the potential for fraud in hospital service claims using CNN (Convolu
 ### `🔖 What is CNN?`
 <a href="https://insightsimaging.springeropen.com/articles/10.1007/s13244-018-0639-9"> <button>CNN</button></a> (Convolutional Neural Networks) is a mathematical construct that is typically composed of three types of layers (or building blocks): convolution, pooling, and fully connected layers.
 
-<a href="cnn architecture"><img src="https://github.com/marceljsh/DaMi-FraudDetection-BPJS-CNN/assets/70991553/a2d827e1-ebe4-487c-bb35-376683bfa61f" align="center" height="400" width="750" ></a>
+<a href="cnn architecture"><img src="https://github.com/marceljsh/DaMi-FraudDetection-BPJS-CNN/assets/70984049/b9b177cb-be2f-4d32-87e1-90b22d4d378e" align="center" height="400" width="750" ></a>
 
 An <a href="https://insightsimaging.springeropen.com/articles/10.1007/s13244-018-0639-9/figures/1"> <button>overview</button></a> of a convolutional neural network (CNN) architecture and the training process.
 
