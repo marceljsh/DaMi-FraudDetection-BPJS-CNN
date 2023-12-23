@@ -196,7 +196,8 @@ plt.title('CNN Confusion Matrix')
 plt.show()
 ```
 
-**Gambar**
+**Output Gambar**
+<img width="667" alt="heatmap" src="https://github.com/marceljsh/DaMi-FraudDetection-BPJS-CNN/blob/main/assets/img/CNN-matrix.png">
 
 <br>
 
