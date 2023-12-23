@@ -42,6 +42,7 @@ The visualization below shows the correlation between features.
 Pada bagian ini akan dijelaskan cara modeling dengan penerapan CNN dalam melakukan prediksi jumlah kasus dan unit cost pada sebuah daerah akibat penambahan Rumah Sakit dari 200217 observasi dan **banyak varibale** variable/feateure. Adapun beberapa fitur yang telah dikembangkan dari hasil encode sebanyak **blabla** feature.
 
 Berikut adalah hal apa saja yang telah dilakukan ditahap modeling: 
+<br>
 **1. `feature selection` for determining `input` and `target features`**
 ```
 X = df.drop('label', axis = 1)
