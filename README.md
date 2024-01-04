@@ -22,10 +22,6 @@ Hackathon to train the model, which can be accessed <a
 
 ### `📚 Business Understanding`
 
-Badan Penyelenggara Jaminan Sosial (BPJS) is among national bureaus with the largest funding allocation. As [reported](https://jdih.kemenkeu.go.id/download/60bdd784-3b61-4b88-b4b0-374c400c1d19/236~PMK.02~2022.pdf) by the [Ministry of Finance](https://www.kemenkeu.go.id), the funds allocated for BPJS will reach IDR 4.46 trillion as of 2023. This huge amount of funds will be used for the [Jaminan Kesehatan Nasional (JKN)](https://siha.kemkes.go.id/portal/files_upload/BUKU_PANDUAN_JKN_BAGI_POPULASI_KUNCI_2016.pdf) program. However, these funds are terribly vulnerable to fraud. Fraud in BPJS can cause losses to the government and community. The government could lose large amounts of funds, while the community's right could be violated. Therefore, it is necessary to implement fraud detection.
-
-In order to detect fraud in BPJS, data analysis will be conducted. Data analysis can be used to find abnormal or suspicious patterns. These patterns can be signs of fraud. Report data will be analyzed using data analysis techniques, such as data mining and machine learning.
-
 ### `📑 Data Understanding`
 - **Describe data**: The dataset consists of 53 variables with a total of 200217 observations. The dataset description can be seen in the table below.
 
@@ -40,13 +36,21 @@ The visualization below shows the correlation between features.
 
 
 ### `🫧 Data Preparation`
-🚧
+Pada bagian ini akan dijabarkan proses untuk persiapan data, yaitu pemilahan atribut untuk analisis dan pembersihan data.
+<br />
+**1. Data Selection**
+<br />
+*Data Selection* atau *Feature Selection* digunakan untuk memilih beberapa fitur untuk membangun model klasifikasi. Proses seleksi dilakukan dengan melakukan penggabungan terhadap fitur yang terkait menjadi satu selanjutnya memilih fitur yang akan digunakan sebagai input fitur.
+<br />
+**2. Data Cleaning**
+<br />
+*Data Cleaning* merupakan proses persiapan data dengan cara menghapus atau memodifikasi data yang salah, tidak akurat, tidak terformat maupun duplikat. Data yang rusak tentunya akan berpengaruh pada kinerja pada sistem. Pada tahap ini, kami akan *drop* kolom `visit_id`, `dx2_koo_k93`, `dx2_u00_u99`, dan `procv00_v89`.
 
 ### `🔁 Modeling`
-Pada bagian ini akan dijelaskan cara modeling dengan penerapan CNN dalam melakukan prediksi jumlah kasus dan unit cost pada sebuah daerah akibat penambahan Rumah Sakit dari 200217 observasi dan **banyak varibale** variable/feateure. Adapun beberapa fitur yang telah dikembangkan dari hasil encode sebanyak **blabla** feature.
+Pada bagian ini akan dijelaskan cara modeling dengan penerapan CNN dalam melakukan prediksi jumlah kasus dan unit cost pada sebuah daerah akibat penambahan Rumah Sakit dari 200217 observasi dan banyak variabel. Adapun beberapa fitur yang telah dikembangkan dari hasil encode sebanyak **116** fitur.
 
 Berikut adalah hal apa saja yang telah dilakukan ditahap modeling: 
-<br>
+<br />
 **1. `feature selection` for determining `input` and `target features`**
 ```
 X = df.drop('label', axis = 1)
@@ -92,7 +96,7 @@ model.add(Dense(1, activation='sigmoid'))
 model.summary()
 ```
 **Output :**
-<br>
+<br />
 | Layer                      | Output Shape      | Param #   |
 | ---------------------------| ------------------| --------- |
 | conv1d_2 (Conv1D)           | (None, 110, 32)   | 96        |
@@ -105,7 +109,7 @@ model.summary()
 | dense_2 (Dense)             | (None, 64)        | 446528    |
 | dropout_5 (Dropout)         | (None, 64)        | 0         |
 | dense_3 (Dense)             | (None, 1)         | 65        |
-<br>
+<br />
 
 **Total params: 451233 (1.72 MB)** 
 
@@ -113,7 +117,7 @@ model.summary()
 
 **Non-trainable params: 192 (768.00 Byte)**
 
-<br>
+<br />
 
 **6. Compile dan fit model CNN**
 
@@ -122,7 +126,7 @@ model.compile(optimizer='adam', loss = 'binary_crossentropy', metrics=['accuracy
 
 training_results = model.fit(X_train, y_train, epochs=10, validation_data=(X_test, y_test), verbose=1) 
 ```
-<br>
+<br />
 
 **Output:**
 
@@ -148,13 +152,12 @@ Epoch 9/10
 Epoch 10/10
 5013/5013 [==============================] - 37s 7ms/step - loss: 0.6548 - accuracy: 0.6002 - val_loss: 0.6399 - val_accuracy: 0.6294
 ```
-<br>
-
+<br />
 
 ### `🔍 Evaluation`
-Pada bagian ini dilakukan tahap Evaluation (Evaluasi) dengan tujuan untuk memprediksi seberapa baik model akhir akan bekerja nantinya sehingga diketahui apakah model tersebut layak digunakan atau tidak dan untuk membantu menemukan model yang paling mewakili pelatihan data <br>
+Pada bagian ini dilakukan tahap Evaluation (Evaluasi) dengan tujuan untuk memprediksi seberapa baik model akhir akan bekerja nantinya sehingga diketahui apakah model tersebut layak digunakan atau tidak dan untuk membantu menemukan model yang paling mewakili pelatihan data <br />
 **1.  Uji Coba Model ke Data Testing** 
-<br>
+<br />
 
 ```
 X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2,  random_state=0)
@@ -163,19 +166,19 @@ loss, accuracy = model.evaluate(X_test, y_test, verbose=1)
 loss_v, accuracy_v = model.evaluate(X_val, y_val, verbose=1)
 ```
 
-<br>
+<br />
 
 **Output:**
 ```
 1254/1254 [==============================] - 2s 1ms/step - loss: 0.6399 - accuracy: 0.6294
-1003/1003 [==============================] - 1s 1ms/step - loss: 0.6375 - accuracy: 0.6353<br>
+1003/1003 [==============================] - 1s 1ms/step - loss: 0.6375 - accuracy: 0.6353<br />
 ```
 
-<br>
+<br />
 
 **2.  Validation Data**
 
-<br>
+<br />
 
 ```
 print("Validation | accuracy = %f  ;  loss = %f" % (accuracy_v, loss_v))
@@ -189,7 +192,7 @@ Test       | accuracy = 0.629370  ;  loss = 0.639914
 ```
 
 **3. CNN Confusion Matrix**
-<br>
+<br />
 
 ```
 y_pred_cnn = model.predict(X_test)
@@ -206,16 +209,16 @@ plt.show()
 
 <img width="667" alt="heatmap" src="https://github.com/marceljsh/DaMi-FraudDetection-BPJS-CNN/blob/main/assets/img/CNN-matrix.png">
 
-<br>
+<br />
 
 ```
 print(classification_report(y_test, y_pred_cnn))
 ```
 
-<br>
+<br />
 
 **Output :**
-<br>
+<br />
 
 |              | Precision | Recall | F1-Score | Support |
 | ------------ | --------- | ------ | -------- | ------- |
@@ -261,9 +264,9 @@ Number of fraud points in the testing dataset = 19923
 
 🗓️ See the timeline <a
     href="https://docs.google.com/spreadsheets/d/1lCm1ovuSqeUQS-WfJKTlWbghmVE-5M6GxSSM4PMYfkw/edit?usp=sharing">
-    <button>here</button></a>!<br>
+    <button>here</button></a>!<br />
 
-<br>
+<br />
 
 ```
 🧞‍♂️ SemelekeTeam
