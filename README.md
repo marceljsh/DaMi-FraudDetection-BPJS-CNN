@@ -21,6 +21,12 @@ Hackathon to train the model, which can be accessed <a
 
 
 ### `📚 Business Understanding`
+The hospital plays a crucial role as a healthcare service provider for the community, with BPJS Kesehatan significantly impacting the quality of services provided. However, with the increasing utilization of BPJS Kesehatan, there is a risk of fraud that can harm various parties. Perpetrators of fraud can originate from BPJS Kesehatan participants, healthcare facility operators, healthcare service buyers, providers of drugs and medical equipment, as well as other involved parties.<br>
+
+
+To address this issue, an analysis of fraud prediction is necessary to identify the factors that can lead to fraud. This will enable us to formulate preventive measures and ensure sustainable business growth.
+
+
 
 ### `📑 Data Understanding`
 - **Describe data**: The dataset consists of 53 variables with a total of 200217 observations. The dataset description can be seen in the table below.
